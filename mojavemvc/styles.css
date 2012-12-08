@@ -1,0 +1,85 @@
+body {
+broder: 0 none;
+margin:0;
+padding: 0;
+}
+#maintable {
+	padding-top: 30px;
+}
+.menu {
+	color: #505050 ;
+	font-family: arial;
+	font-size: 13px;
+}
+#footer {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #696969;
+	font-family: arial;
+	font-size: 11px;		
+}
+.text {
+	text-align: left;
+	color: #000000;
+	font-family: arial;
+	font-size: 13px;
+}
+a.menulink:link {
+	color: #505050 ;
+	text-decoration: none;
+}
+a.menulink:visited {
+	color: #505050 ;
+	text-decoration: none;
+}
+a.menulink:hover {
+	color: #35209c;
+	text-decoration: none;
+}
+#submitbutton {
+	width:96px;
+	height:25px;
+	font-family:Arial;
+	font-size:13px;
+}
+#messagearea {
+	width:311px;
+	height:139px;
+	border:1px #C0C0C0 solid;
+	font-family:Courier New;
+	font-size:13px;
+}
+#captcha {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+#norobots {
+	padding-bottom: 10px;
+}
+#norobotstext {
+	margin: 5px;
+	width:140px;
+	height:18px;
+	border:1px #C0C0C0 solid;
+	font-family:Courier New;
+	font-size:13px;
+}
+.inputtext {
+	margin: 5px;
+	width:233px;
+	height:18px;
+	border:1px #C0C0C0 solid;
+	font-family:Courier New;
+	font-size:13px;
+}
+a img {border: none; }
+.smalltext {font-family:arial;font-size:8pt;}
+.regtext{font-family:arial;font-size:10pt;}
+
+h1 {font-family:arial;font-size:13pt;}
+
+.listitem {padding-bottom:8px;}
+
+.red {
+color: #FF0000;
+}
