@@ -24,7 +24,7 @@ It borrows ideas from Spring Web MVC and EJB 3.1, and incorporates Guice. It att
       <li class="listitem">facilitate TDD and Dependency Injection, and ultimately the development of decoupled components, by providing IoC capabilities</li>
       <li class="listitem">remove concurrency concerns from web application development by providing a single-thread programming model</li>
       <li class="listitem">remove cross-cutting concerns from web application development by supporting AOP through the interceptor pattern</li>
-      <li class="listitem">be as minimally intrusive a framework as possible; it tries to get out of your way by minimizing framework-related metadata</li>
+      <li class="listitem">be as minimally intrusive a framework as possible; it tries to get out of your way by minimizing framework-related metadata and biolerplate code</li>
      </ul>
 <p class="regtext">
 Mojave MVC incorporates the Google Guice framework. All user components in the application can be configured with injectable dependencies, 
