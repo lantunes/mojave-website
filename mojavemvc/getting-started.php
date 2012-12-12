@@ -101,7 +101,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 </web-app>';
 $geshi = new GeSHi($source, 'xml');
 $geshi->enable_keyword_links(false);
-$geshi->set_overall_style('background-color: #ffffee;', true);
+$geshi->set_overall_style('background-color: #F8F8F8;', true);
 echo $geshi->parse_code();
 ?>
 
