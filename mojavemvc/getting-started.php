@@ -101,7 +101,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
 </web-app>';
 $geshi = new GeSHi($source, 'xml');
 $geshi->enable_keyword_links(false);
-$geshi->set_overall_style('background-color: #f0f0f0;', true);
+$geshi->set_overall_style('background-color: #f8f8f8;', true);
 echo $geshi->parse_code();
 ?>
 
@@ -139,6 +139,7 @@ public class HelloWorld {
 }';
 $geshi = new GeSHi($source, 'java5');
 $geshi->enable_keyword_links(false);
+$geshi->set_overall_style('background-color: #f8f8f8;', true);
 echo $geshi->parse_code();
 ?>
 
@@ -154,6 +155,7 @@ $source = '<html>
 </html>';
 $geshi = new GeSHi($source, 'html4strict');
 $geshi->enable_keyword_links(false);
+$geshi->set_overall_style('background-color: #f8f8f8;', true);
 echo $geshi->parse_code();
 ?>
 
