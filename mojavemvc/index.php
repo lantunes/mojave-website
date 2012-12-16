@@ -10,6 +10,8 @@
 
 <?php include "../mojavemvc-php-incl/menu.php" ?>
 
+<?php include "../mojavemvc-php-incl/intro.php" ?>
+
 <?php include "../mojavemvc-php-incl/footer.php" ?>
 
 </table>
