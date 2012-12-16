@@ -18,7 +18,7 @@ Mojave also:
 	 </p>
 	 <ul style="padding-left:20px;font-family: arial;font-size:10pt">
 		<li class="listitem">supports building RESTful applications: controller actions can be bound to specific HTTP methods and URIs</li>
-		<li class="listitem">supports JSP out-of-the-box; no additional work is required</li>		
+		<li class="listitem">supports JSP out-of-the-box</li>		
 		<li class="listitem">is small and lightweight</li>
 		<li class="listitem">has very high test coverage, making the framework easy to change</li>
      </ul>
