@@ -1,4 +1,4 @@
-<?php include_once 'source/lib/geshi.php'; ?>
+<?php include_once '../mojavemvc-php-incl/geshify.php'; ?>
 <html>
 <head>
 <?php define("TITLE", "Getting Started"); ?>
@@ -70,8 +70,8 @@ In our .war archive, we'll need to include a web.xml in the WEB-INF folder. The 
 file will define one servlet, the Mojave MVC front controller:
 </p>
 
-<?php 
-$source = '<?xml version="1.0" encoding="UTF-8"?>
+<?php
+echo geshify('<?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="2.4" 
 xmlns="http://java.sun.com/xml/ns/j2ee" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -98,11 +98,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
     <url-pattern>/serv/*</url-pattern>
   </servlet-mapping>
 	
-</web-app>';
-$geshi = new GeSHi($source, 'xml');
-$geshi->enable_keyword_links(false);
-$geshi->set_overall_style('background-color: #f8f8f8;', true);
-echo $geshi->parse_code();
+</web-app>','xml');
 ?>
 
 <p class="regtext">
@@ -120,27 +116,25 @@ Next, we'll need to create a controller. Let's create a class called HelloWorld:
 </p>
 
 <?php 
-$source = 'package helloworld.controllers;
+echo geshify('package helloworld.controllers;
 
 import org.mojavemvc.annotations.Action;
 import org.mojavemvc.annotations.Param;
+import org.mojavemvc.annotations.ParamPath;
 import org.mojavemvc.annotations.StatelessController;
-import org.mojavemvc.views.JspView;
+import org.mojavemvc.views.JSP;
 import org.mojavemvc.views.View;
 
 @StatelessController
 public class HelloWorld {
 
   @Action
+  @ParamPath("to/:name")
   public View sayHello(@Param("name") String name) {
 		
-    return new JspView("hello.jsp").withAttribute("name", name);
+    return new JSP("hello").withAttribute("name", name);
   }
-}';
-$geshi = new GeSHi($source, 'java5');
-$geshi->enable_keyword_links(false);
-$geshi->set_overall_style('background-color: #f8f8f8;', true);
-echo $geshi->parse_code();
+}', 'java5');
 ?>
 
 <p class="regtext">
@@ -148,15 +142,11 @@ Finally, we'll need to create the hello.jsp file referred to in the HelloWorld c
 </p>
 
 <?php 
-$source = '<html>
+echo geshify('<html>
   <body>
     <p>Hello <%=request.getAttribute("name") %>!</p>
   </body>
-</html>';
-$geshi = new GeSHi($source, 'html4strict');
-$geshi->enable_keyword_links(false);
-$geshi->set_overall_style('background-color: #f8f8f8;', true);
-echo $geshi->parse_code();
+</html>', 'html4strict');
 ?>
 
 <p class="regtext">
@@ -171,7 +161,7 @@ like Apache Tomcat, we can invoke the application with the following request:
 </p>
 
 <code>
-http://localhost:8080/helloworld/serv/HelloWorld/sayHello?name=John
+http://localhost:8080/helloworld/serv/HelloWorld/sayHello/to/John
 </code>
 
 <p class="regtext">

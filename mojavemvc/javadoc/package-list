@@ -4,4 +4,5 @@ org.mojavemvc.aop
 org.mojavemvc.core
 org.mojavemvc.exception
 org.mojavemvc.forms
+org.mojavemvc.util
 org.mojavemvc.views

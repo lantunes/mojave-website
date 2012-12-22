@@ -1,4 +1,4 @@
-<?php include_once 'source/lib/geshi.php'; ?>
+<?php include_once '../mojavemvc-php-incl/geshify.php'; ?>
 <html>
 <head>
 <?php define("TITLE", "Dependency Injection with Guice"); ?>
@@ -48,14 +48,14 @@ class:
 </p>
 
 <?php 
-$source = 'package injected.controllers;
+echo geshify('package injected.controllers;
 
 import javax.servlet.http.HttpSession;
 
 import org.mojavemvc.annotations.Action;
 import org.mojavemvc.annotations.Param;
 import org.mojavemvc.annotations.StatelessController;
-import org.mojavemvc.views.JspView;
+import org.mojavemvc.views.JSP;
 import org.mojavemvc.views.View;
 
 import com.google.inject.Inject;
@@ -75,13 +75,9 @@ public class InjectedController {
   public View putInSession(@Param("name") String name) {
 
     session.setAttribute("name", name);
-    return new JspView("index.jsp");
+    return new JSP("index");
   }
-}';
-$geshi = new GeSHi($source, 'java5');
-$geshi->enable_keyword_links(false);
-$geshi->set_overall_style('background-color: #f8f8f8;', true);
-echo $geshi->parse_code();
+}', 'java5');
 ?>
 
 <p class="regtext">
@@ -110,7 +106,7 @@ FrontController servlet definition in the web.xml:
 </p>
 
 <?php 
-$source = '<servlet>
+echo geshify('<servlet>
   <servlet-name>FrontController</servlet-name>
   <servlet-class>org.mojavemvc.FrontController</servlet-class>
   <init-param>
@@ -122,11 +118,7 @@ $source = '<servlet>
     <param-value>my.modules</param-value>
   </init-param> 
   <load-on-startup>1</load-on-startup>
-</servlet>';
-$geshi = new GeSHi($source, 'xml');
-$geshi->enable_keyword_links(false);
-$geshi->set_overall_style('background-color: #f8f8f8;', true);
-echo $geshi->parse_code();
+</servlet>', 'xml');
 ?>
 
     </td>

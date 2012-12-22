@@ -1,0 +1,1 @@
+<?php include_once 'source/lib/geshi.php'; ?><?phpfunction geshify($source, $language) {  $geshi = new GeSHi($source, $language);  $geshi->enable_keyword_links(false);  $geshi->set_overall_style('background-color: #f8f8f8;', true);  return $geshi->parse_code();}?>
