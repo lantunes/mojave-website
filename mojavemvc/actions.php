@@ -1,4 +1,4 @@
-<?php define("TITLE", "Routing"); ?>
+<?php define("TITLE", "Actions"); ?>
 <?php include "../mojavemvc-php-incl/page-top.php" ?>
 <?php include "../mojavemvc-php-incl/docs-top.php" ?>
 

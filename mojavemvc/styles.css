@@ -36,6 +36,21 @@ a.menulink:hover {
 	color: #35209c;
 	text-decoration: none;
 }
+a.sitelink:link {
+	color: #1573d1 ;
+	text-decoration: none;
+	border-bottom:1px dotted;
+}
+a.sitelink:visited {
+	color: #1573d1 ;
+	text-decoration: none;
+	border-bottom:1px dotted;
+}
+a.sitelink:hover {
+	color: #3399FF;
+	text-decoration: none;
+	border-bottom:1px dotted;
+}
 #submitbutton {
 	width:96px;
 	height:25px;
@@ -76,7 +91,17 @@ a img {border: none; }
 .smalltext {font-family:arial;font-size:8pt;}
 .regtext{font-family:arial;font-size:10pt;}
 
-h1 {font-family:arial;font-size:13pt;}
+h1 {
+	font-family:arial;
+	font-size:13pt;
+}
+
+h2 {
+	font-family:arial;
+	font-size:10pt;
+	font-style:italic;
+	text-align:center;
+}
 
 .listitem {padding-bottom:8px;}
 

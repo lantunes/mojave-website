@@ -1,15 +1,5 @@
-<html>
-<head>
 <?php define("TITLE", "Documentation"); ?>
-<?php include "../mojavemvc-php-incl/head.php" ?>
-</head>
-<body>
-
-<table id="maintable" width="100%" border="0" cellpadding="0" cellspacing="0">
-
-<?php include "../mojavemvc-php-incl/banner.php" ?>
-
-<?php include "../mojavemvc-php-incl/menu.php" ?>
+<?php include "../mojavemvc-php-incl/page-top.php" ?>
 
 <tr>
  <td valign="middle" align="center">
@@ -25,6 +15,9 @@
    </p>
    <p class="regtext">
     &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/controllers">Controllers</a>
+   </p>
+   <p class="regtext">
+    &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/actions">Actions</a>
    </p>
    <p class="regtext">
     &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/views">Views</a>
@@ -62,9 +55,4 @@
  </td>
 </tr>
 
-<?php include "../mojavemvc-php-incl/footer.php" ?>
-
-</table>
-
-</body>
-</html>
+<?php include "../mojavemvc-php-incl/page-bottom.php" ?>

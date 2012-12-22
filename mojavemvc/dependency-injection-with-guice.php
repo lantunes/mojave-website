@@ -1,27 +1,6 @@
-<?php include_once '../mojavemvc-php-incl/geshify.php'; ?>
-<html>
-<head>
 <?php define("TITLE", "Dependency Injection with Guice"); ?>
-<?php include "../mojavemvc-php-incl/head.php" ?>
-</head>
-<body>
-
-<table id="maintable" width="100%" border="0" cellpadding="0" cellspacing="0">
-
-<?php include "../mojavemvc-php-incl/banner.php" ?>
-
-<?php include "../mojavemvc-php-incl/menu.php" ?>
-
-<tr>
- <td valign="middle" align="center">
-  <table width="690px" border="0" cellpadding="10" cellspacing="10">
-   <tr>
-    <td align="center">
-     <h1>Dependency Injection with Guice</h1>
-    </td>
-   </tr>
-   <tr>
-    <td>
+<?php include "../mojavemvc-php-incl/page-top.php" ?>
+<?php include "../mojavemvc-php-incl/docs-top.php" ?>
 
 <p class="regtext">
 Mojave MVC supports dependency injection through the Google Guice framework. The entry point 
@@ -121,15 +100,5 @@ echo geshify('<servlet>
 </servlet>', 'xml');
 ?>
 
-    </td>
-   </tr>
-  </table>
- </td>
-</tr>
-
-<?php include "../mojavemvc-php-incl/footer.php" ?>
-
-</table>
-
-</body>
-</html>
+<?php include "../mojavemvc-php-incl/docs-bottom.php" ?>
+<?php include "../mojavemvc-php-incl/page-bottom.php" ?>
