@@ -47,12 +47,10 @@ if ($_POST['submit_check'] == '1')
 <?php define("TITLE", "Send"); ?>
 <?php include "../mojavemvc-php-incl/page-top.php" ?>
 
-<tr>
- <td align="center" valign="middle">
-  <table width="400px" border="0" cellpadding="10" cellspacing="10">
-   <tr>
-    <td align="center" valign="middle">
-     <p class="text">
+<table width="400px" border="0" cellpadding="10" cellspacing="10">
+ <tr>
+  <td align="center" valign="middle">
+   <p class="text">
       <?php
        if ($_POST['submit_check'] == '1' && count($errors) != 0)
        {
@@ -72,11 +70,9 @@ if ($_POST['submit_check'] == '1')
         print 'Please use the <a href="feedback" class="menulink">feedback page</a> to send a message.';
        }
       ?>
-     </p>
-    </td>
-   </tr>
-  </table>
- </td>
-</tr>
+   </p>
+  </td>
+ </tr>
+</table>
 
 <?php include "../mojavemvc-php-incl/page-bottom.php" ?>

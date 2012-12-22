@@ -1,14 +1,11 @@
 <?php define("TITLE", "Documentation"); ?>
 <?php include "../mojavemvc-php-incl/page-top.php" ?>
 
-<tr>
- <td valign="middle" align="center">
-
 <table width="300px" border="0" cellpadding="10" cellspacing="10">
  <tr>
   <td align="left">
    <p class="regtext">
-    &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/getting-started">Getting Started: Hello World</a>
+    &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/getting-started">Getting Started - Hello World</a>
    </p>
    <p class="regtext">
     &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/dependency-injection-with-guice">Dependency Injection with Guice</a>
@@ -51,8 +48,5 @@
   </td>
  </tr>
 </table>
-
- </td>
-</tr>
 
 <?php include "../mojavemvc-php-incl/page-bottom.php" ?>
