@@ -43,8 +43,8 @@ The following are valid declarations of stateless controllers:
 </p>
 
 <?php 
-echo geshify('
-@StatelessController
+echo geshify(
+'@StatelessController
 public class SomeController {
  ...
 }
@@ -76,8 +76,8 @@ The following are valid declarations of stateful controllers:
 </p>
 
 <?php 
-echo geshify('
-@StatefulController
+echo geshify(
+'@StatefulController
 public class SomeController {
  ...
 }
@@ -100,8 +100,8 @@ The following are valid declarations of singleton controllers:
 </p>
 
 <?php 
-echo geshify('
-@SingletonController
+echo geshify(
+'@SingletonController
 public class SomeController {
  ...
 }
