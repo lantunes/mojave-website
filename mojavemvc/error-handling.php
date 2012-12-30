@@ -37,7 +37,8 @@ created per request. Therefore, for a developer to specify their own
 <code>ErrorHandler</code>, they must specify an 
 <code>ErrorHandlerFactory</code>. An <code>ErrorHandlerFactory</code> is
 specified to the application in the web.xml file, through the 
-<code>error-handler-factory</code> init parameter. 
+<code>error-handler-factory</code> init parameter. The value consists of
+the custom <code>ErrorHandlerFactory</code>'s fully qualified class name.
 </p>
 
 <p class="regtext">
@@ -49,6 +50,79 @@ be rendered in case of an exception. If this init parameter is specified,
 then no <code>error-handler-factory</code> need be specified (though it
 can be).
 </p>
+
+<p class="regtext">
+As an example of an application that specifies an <code>ErrorHandlerFactory</code>,
+consider the following web.xml snippet:
+</p>
+
+<?php
+echo geshify('<servlet>
+    <servlet-name>FrontController</servlet-name>
+    <servlet-class>org.mojavemvc.FrontController</servlet-class>
+    <init-param>
+      <param-name>controller-classes</param-name>
+      <param-value>helloworld.controllers</param-value>
+    </init-param>
+    <init-param>
+      <param-name>error-handler-factory</param-name>
+      <param-value>helloworld.exception.MyErrorHandlerFactory</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FrontController</servlet-name>
+    <url-pattern>/serv/*</url-pattern>
+  </servlet-mapping>','xml');
+?>
+
+<p class="regtext">
+The following might be an implementation of <code>MyErrorHandlerFactory</code>,
+and a corresponding <code>MyErrorHandler</code>:
+</p>
+
+<?php 
+echo geshify('public class MyErrorHandlerFactory implements ErrorHandlerFactory {
+  public ErrorHandler createErrorHandler() {
+    return new MyErrorHandler();
+  }
+}
+
+public class MyErrorHandler implements ErrorHandler {
+  public PlainText handleError(Throwable e) {
+    return new PlainText("Error!");
+  }
+}', 'java5');
+?>
+
+<p class="regtext">
+Alternatively, if the application is JSP-based, supplying simply the name 
+of a JSP file to render in place of errors would require no extra work:
+</p>
+
+<?php
+echo geshify('<servlet>
+    <servlet-name>FrontController</servlet-name>
+    <servlet-class>org.mojavemvc.FrontController</servlet-class>
+    <init-param>
+      <param-name>controller-classes</param-name>
+      <param-value>helloworld.controllers</param-value>
+    </init-param>
+    <init-param>
+      <param-name>jsp-path</param-name>
+      <param-value>/WEB-INF/jsp/</param-value>
+    </init-param>
+	<init-param>
+      <param-name>jsp-error-file</param-name>
+      <param-value>error.jsp</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FrontController</servlet-name>
+    <url-pattern>/serv/*</url-pattern>
+  </servlet-mapping>','xml');
+?>
 
 <?php include "../mojavemvc-php-incl/docs-bottom.php" ?>
 <?php include "../mojavemvc-php-incl/page-bottom.php" ?>
