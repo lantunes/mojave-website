@@ -17,6 +17,9 @@
     <td>
      <span class="menu"><a class="menulink" target="_blank" href="https://github.com/lantunes/mojave" title="Browse Mojave MVC source code">Source</a></span>
     </td>
+	<td>
+     <span class="menu"><a class="menulink" href="./faq" title="Frequently asked questions">FAQ</a></span>
+    </td>
     <td align="center" valign="middle">
      <span class="menu"><a class="menulink" href="./feedback" title="Contact Mojave MVC and provide feedback and ask questions">Feedback</a></span>
     </td>
