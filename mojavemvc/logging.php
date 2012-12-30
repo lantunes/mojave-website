@@ -15,7 +15,7 @@ In the traditional servlet/JSP environment, logging is not
 provided out-of-the-box. It is something that must be configured separately.
 JDK logging is available, but it requires some work to set up. The result
 is that the same logging solution must be re-implemented every time a 
-new project is started.
+new project is started, and core logging statements might be missed.
 </p>
 
 <p class="regtext">
