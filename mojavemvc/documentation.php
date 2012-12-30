@@ -35,6 +35,9 @@
     &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/logging">Logging</a>
    </p>
    <p class="regtext">
+    &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/embedded-jetty">Bootstrapping with Embedded Jetty</a>
+   </p>
+   <p class="regtext">
     &raquo; <a style="text-decoration:none;font-family:arial;font-size:10pt" href="/tdd-with-mojave-mvc">TDD with Mojave MVC</a>
    </p>
   </td>

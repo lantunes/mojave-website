@@ -90,6 +90,7 @@ a.sitelink:hover {
 a img {border: none; }
 .smalltext {font-family:arial;font-size:8pt;}
 .regtext{font-family:arial;font-size:10pt;}
+.notetext{font-family:arial;font-style:italic;font-size:9pt}
 
 h1 {
 	font-family:arial;
