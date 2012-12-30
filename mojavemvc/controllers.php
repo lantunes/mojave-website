@@ -118,5 +118,65 @@ instance will be accessed simultaneously by multiple threads, and thus there wil
 issues to address. The container will not attempt to address those issues.
 </p>
 
+<p class="regtext">
+Singleton controllers can also be optionally annotated with the Init annotation. The singleton 
+controller instance will be created at startup if it is annotated with this annotation. As an example, 
+consider the following controller:
+</p>
+
+<?php 
+echo geshify(
+'@Init
+@SingletonController
+public class StartupController {
+ ...
+}', 'java5');
+?>
+
+<p class="regtext">
+The controller above will be instantiated during initialization of the FrontController servlet.
+</p>
+
+<h2>Default Controllers</h2>
+
+<p class="regtext">
+A Stateless or Stateful controller in the Mojave framework can be annotated as the Default controller, 
+using the DefaultController annotation. A controller annotated with this annotation is flagged as the 
+default controller for all application requests not specifying a controller. Only one controller in 
+the application can be annotated with this annotation. As an example, consider the following controller:
+</p>
+
+<?php 
+echo geshify(
+'@DefaultController
+@StatelessController("test")
+public class SomeController {
+
+  @Action
+  public View someAction() {
+    return new JSP("index");
+  }
+}', 'java5');
+?>
+
+<p class="regtext">
+We can invoke the someAction method by making the following request (provided there is no controller 
+named 'someAction'):
+</p>
+
+<code>
+http://.../someAction
+</code>
+
+<p class="regtext">
+Since there was no controller name supplied, the default controller was used as the controller 
+for the request. However, we can also invoke the someAction method by making the following standard 
+request:
+</p>
+
+<code>
+http://.../test/someAction
+</code>
+
 <?php include "../mojavemvc-php-incl/docs-bottom.php" ?>
 <?php include "../mojavemvc-php-incl/page-bottom.php" ?>
