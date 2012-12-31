@@ -49,7 +49,7 @@ Pages, or JSPs, to render their views. To use this class, the
 <code>jsp-path</code> init param must have been specified at start-up. When the
 <code>render</code> method in invoked, the <code>RequestDispatcher</code> is 
 obtained for the specified JSP page, and the request is forwarded to it. Finally,
-it is also useful to note that the class provides methods for setting parameters
+it is also useful to note that the class provides methods for setting attributes
 using a fluent interface.
 </p>
 
@@ -68,7 +68,7 @@ public class HelloWorld {
 <h2>Redirects</h2>
 
 <p class="regtext">
-Often it is necessary to redirect a request. To do this in the Mojave framework,
+Often, it is necessary to redirect a request. To do this in the Mojave framework,
 a <code>View</code> implementation called <code>Redirect</code> is provided. The 
 constructor for the class takes a single String argument, which is the redirect 
 location. Invoking the <code>render</code> method simply invokes 
