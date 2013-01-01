@@ -155,5 +155,28 @@ public class HelloWorld {
 }', 'java5');
 ?>
 
+<h2>Customized Responses</h2>
+
+<p class="regtext">
+Some use cases may require that the response contains a particular status code, with
+additional information in headers, in addition to an optional content payload. For these
+cases, the Mojave framework provides the <code>Status<code> class. The <code>Status<code>
+class gives the user fine grained control over the response being sent to the requestor.
+</p>
+
+<?php 
+echo geshify('@StatelessController
+public class HelloWorld {
+
+  @Action
+  public View customizedResponse() {
+    return new Status.OK()
+      .withContent("it is ok")
+      .withHeader("My-Custom-Header", "123")
+      .withLastModified(new Date());
+  }
+}', 'java5');
+?>
+
 <?php include "../mojavemvc-php-incl/docs-bottom.php" ?>
 <?php include "../mojavemvc-php-incl/page-bottom.php" ?>
