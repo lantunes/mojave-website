@@ -153,7 +153,7 @@ echo geshify(
 public class SomeController {
 
   @Action
-  public View someAction() {
+  public JSP someAction() {
     return new JSP("index");
   }
 }', 'java5');
@@ -177,6 +177,38 @@ request:
 <code>
 http://.../test/someAction
 </code>
+
+<h2>Controller Constructors</h2>
+
+<p class="regtext">
+Every instance of a Mojave controller is created through the Guice injector. Therefore, if the controller
+has a constructor that requires parameters, then the contructor must be annotated with the Inject
+annotation, and the application's Guice modules must be configured appropriately. The Mojave framework
+supports injecting the HttpServletRequest, HttpServletResponse, and HttpSession out-of-the-box. (Injection 
+of the ServletContext, however, is not currently allowed.) There is no module configuration required to
+support injecting instances of these types. Also, controllers can be injected into other controllers.
+</p>
+
+<?php 
+echo geshify(
+'@StatelessController
+public class SomeController {
+
+  private final HttpServletRequest req;
+  private final HttpServletResponse resp;
+  private final HttpSession sess;
+  
+  @Inject
+  public SomeController(HttpServletRequest req, HttpServletResponse resp, HttpSession sess) {
+    this.req = req;
+	this.resp = resp;
+	this.sess = sess;
+  }
+  
+  ...  
+  
+}', 'java5');
+?>
 
 <?php include "../mojavemvc-php-incl/docs-bottom.php" ?>
 <?php include "../mojavemvc-php-incl/page-bottom.php" ?>

@@ -160,8 +160,9 @@ public class HelloWorld {
 <p class="regtext">
 Some use cases may require that the response contains a particular status code, with
 additional information in headers, in addition to an optional content payload. For these
-cases, the Mojave framework provides the <code>Status<code> class. The <code>Status<code>
-class gives the user fine grained control over the response being sent to the requestor.
+cases, the Mojave framework provides the <code>Status</code> class. The <code>Status</code>
+class gives the user fine grained control over the response being sent to the requestor, 
+through a fluent interface.
 </p>
 
 <?php 
