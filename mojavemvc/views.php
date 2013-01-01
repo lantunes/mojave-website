@@ -160,7 +160,7 @@ public class HelloWorld {
 <p class="regtext">
 Some use cases may require that the response contains a particular status code, with
 additional information in headers, in addition to an optional content payload. For these
-cases, the Mojave framework provides the <code>Status</code> class. The <code>Status</code>
+cases, the Mojave framework provides the <code>Response</code> class. The <code>Response</code>
 class gives the user fine grained control over the response being sent to the requestor, 
 through a fluent interface.
 </p>
@@ -171,7 +171,7 @@ public class HelloWorld {
 
   @Action
   public View customizedResponse() {
-    return new Status.OK()
+    return new Response.OK()
       .withContent("it is ok")
       .withHeader("My-Custom-Header", "123")
       .withLastModified(new Date());
