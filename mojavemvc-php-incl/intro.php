@@ -25,6 +25,9 @@ Mojave MVC incorporates the Google Guice framework. All user components in the a
 through use of the standard @Inject annotation. Injection is configured through user-supplied Guice Modules, using only idiomatic Java. Mojave
 also works out-of-the-box on Google App Engine and AWS Elastic Beanstalk.
    </p>
+   <p class="regtext">
+We'd be happy to hear from you. If you have questions, please post them to <a class="sitelink" href="http://groups.google.com/group/mojave-mvc" target="_blank">our Google Groups discussion group</a>.
+   </p>
   </td>
  </tr>
 </table>

@@ -6,7 +6,11 @@
  <tr>
   <td>
    <p class="regtext">
-    Please feel free to provide feedback using this form. We'd like to hear
+    We'd be happy to hear from you. If you have questions, 
+	please post them to <a class="sitelink" href="http://groups.google.com/group/mojave-mvc" target="_blank">our Google Groups discussion group</a>. You can use this forum to post questions about the Mojave MVC Java web framework, or start a discussion related to it. We're really interested in hearing about your experiences using the framework, including what you like or don't like about it. If you are currently using it for one of your projects, please post a short description. We'd really like to hear any kind of feedback you may have--good or bad!
+   </p>
+   <p class="regtext">
+    Alternatively, you can provide feedback using this form. We'd like to hear
     your feedback, and we'll try our best to answer any questions you may
     have.
    </p>
