@@ -21,5 +21,9 @@ to render JSPs, or to provide a RESTful service, where the content produced
 is not necessarily meant to be rendered in a browser.
 </p>
 
+<p class="regtext">
+If you have other questions, please post them to <a class="sitelink" href="http://groups.google.com/group/mojave-mvc" target="_blank">our Google Groups discussion group</a>. We'd really like to hear from you!
+</p>
+
 <?php include "../mojavemvc-php-incl/docs-bottom.php" ?>
 <?php include "../mojavemvc-php-incl/page-bottom.php" ?>

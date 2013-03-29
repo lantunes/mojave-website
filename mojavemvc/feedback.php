@@ -2,7 +2,7 @@
 <?php define("TITLE", "Feedback"); ?>
 <?php include "../mojavemvc-php-incl/page-top.php" ?>
 
-<table width="420px" border="0" cellpadding="10" cellspacing="10">
+<table width="520px" border="0" cellpadding="10" cellspacing="10">
  <tr>
   <td>
    <p class="regtext">
