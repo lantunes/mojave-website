@@ -51,6 +51,21 @@ a.sitelink:hover {
 	text-decoration: none;
 	border-bottom:1px dotted;
 }
+a.sitelink2:link {
+	color: #383838 ;
+	text-decoration: none;
+	border-bottom:1px dotted;
+}
+a.sitelink2:visited {
+	color: #383838 ;
+	text-decoration: none;
+	border-bottom:1px dotted;
+}
+a.sitelink2:hover {
+	color: #787878;
+	text-decoration: none;
+	border-bottom:1px dotted;
+}
 #submitbutton {
 	width:96px;
 	height:25px;

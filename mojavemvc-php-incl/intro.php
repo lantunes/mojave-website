@@ -26,7 +26,7 @@ through use of the standard @Inject annotation. Injection is configured through 
 also works out-of-the-box on Google App Engine and AWS Elastic Beanstalk.
    </p>
    <p class="regtext">
-We'd be happy to hear from you. If you have questions, please post them to <a class="sitelink" href="http://groups.google.com/group/mojave-mvc" target="_blank">our Google Groups discussion group</a>.
+We'd be happy to hear from you. If you have questions, please post them to <a class="sitelink2" href="http://groups.google.com/group/mojave-mvc" target="_blank">our Google Groups discussion group</a>.
    </p>
   </td>
  </tr>
