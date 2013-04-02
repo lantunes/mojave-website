@@ -2,7 +2,7 @@
  <tr>
   <td>
    <p class="regtext">
-Mojave MVC is an annotation-driven, POJO-based web application development framework for Java. 
+Mojave (pronounced Mo-hav-ee) MVC is an annotation-driven, POJO-based web application development framework for Java. 
 It borrows ideas from Spring Web MVC and EJB 3.1, and incorporates Guice. It attempts to:
    </p>
    <ul class="list">
