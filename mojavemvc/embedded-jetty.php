@@ -56,19 +56,19 @@ public class Main {
   public static void main(String[] args) throws Exception {
 
     Server server = new Server(8080);
-	ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
-	context.setContextPath("/");
-	HandlerList handlers = new HandlerList();
-	handlers.setHandlers(new Handler[]{context, new DefaultHandler()});
-	server.setHandler(handlers);
+    ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+    context.setContextPath("/");
+    HandlerList handlers = new HandlerList();
+    handlers.setHandlers(new Handler[]{context, new DefaultHandler()});
+    server.setHandler(handlers);
 
-	ServletHolder servletHolder = new ServletHolder(new org.mojavemvc.FrontController());
-	servletHolder.setInitParameter("controller-classes", "demo.mojave.controllers");
-	servletHolder.setInitOrder(1);
-	context.addServlet(servletHolder, "/*");
+    ServletHolder servletHolder = new ServletHolder(new org.mojavemvc.FrontController());
+    servletHolder.setInitParameter("controller-classes", "demo.mojave.controllers");
+    servletHolder.setInitOrder(1);
+    context.addServlet(servletHolder, "/*");
 
-	server.start();
-	server.join();
+    server.start();
+    server.join();
   }
 }', 'java5');
 ?>
