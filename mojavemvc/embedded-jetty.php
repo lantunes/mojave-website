@@ -56,17 +56,19 @@ public class Main {
   public static void main(String[] args) throws Exception {
 
     Server server = new Server(8080);
-    ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
-    context.setContextPath("/");
-    server.setHandler(context);
- 
-    ServletHolder servletHolder = new ServletHolder(new org.mojavemvc.FrontController());
-    servletHolder.setInitParameter("controller-classes", "demo.mojave.controllers");
-    servletHolder.setInitOrder(1);
-    context.addServlet(servletHolder, "/mojavedemo/*");
- 
-    server.start();
-    server.join();
+	ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+	context.setContextPath("/");
+	HandlerList handlers = new HandlerList();
+	handlers.setHandlers(new Handler[]{context, new DefaultHandler()});
+	server.setHandler(handlers);
+
+	ServletHolder servletHolder = new ServletHolder(new org.mojavemvc.FrontController());
+	servletHolder.setInitParameter("controller-classes", "demo.mojave.controllers");
+	servletHolder.setInitOrder(1);
+	context.addServlet(servletHolder, "/*");
+
+	server.start();
+	server.join();
   }
 }', 'java5');
 ?>
@@ -76,11 +78,17 @@ That's it! Now, just start the application from the command line, and in a brows
 </p>
 
 <code>
-http://localhost:8080/mojavedemo/HelloWorld/sayHello
+http://localhost:8080/HelloWorld/sayHello
 </code>
 
 <p class="regtext">
 You should see the words 'Hello World!' displayed in the browser.
+</p>
+
+<p class="notetext">
+NOTE: In the example above, we set the URL pattern to &quot;/*&quot;. However,
+if we had returned a JSP view, or otherwise used forward() or include() when rendering
+our views, we would need to use a pattern like &quot;/serv/*&quot;.
 </p>
 
 <?php include "../mojavemvc-php-incl/docs-bottom.php" ?>

@@ -87,7 +87,7 @@ parameters, but these will suffice for now. The controller-classes parameter def
 namespace of the controller classes in the application. The jsp-path parameter defines
 the location of JSP pages. Note the URL pattern of the servlet mapping: you can replace 
 "serv" with whatever you like, but the pattern must otherwise follow the same convention
-as above. 
+as above if you are using JSP, as we will in this example. 
 </p>
 
 <p class="regtext">
