@@ -8,19 +8,19 @@
    <table cellspacing="15">
     <tr>
      <td>
-      <a  style="text-decoration:none;font-family:arial;font-size:10pt" href="files/mojave-core-1.0.5.jar">Mojave MVC v1.0.5 jar</a><br/>
+      <a  style="text-decoration:none;font-family:arial;font-size:10pt" href="files/mojave-core-1.0.6.jar">Mojave MVC v1.0.6 jar</a><br/>
       <div class="smalltext" style="padding-top:6px">
-       md5: 4F205F30B7D3506172F2B2FAE117BE1B<br/>
-       sha1: 17AADC1C14B9F0FAB9286CAE5BDA1FBBC7E65614
+       md5: 610A93FA6BA720DCB6479ACEC5946A93<br/>
+       sha1: A97AB30D53A566CD04C65D306E6759FE5049ACAF
       </div>
      </td>
     </tr>      
     <tr>
      <td>
-      <a  style="text-decoration:none;font-family:arial;font-size:10pt" href="files/mojave-core-1.0.5-all.jar">Mojave MVC v1.0.5 jar with all dependencies</a><br/>
+      <a  style="text-decoration:none;font-family:arial;font-size:10pt" href="files/mojave-core-1.0.6-all.jar">Mojave MVC v1.0.6 jar with all dependencies</a><br/>
       <div class="smalltext" style="padding-top:6px">
-       md5: DF1B0FB5B401E75F9C990B2243F67178<br/>
-       sha1: 0A3473108919C418283737BEF7B1021AF6F81A2D
+       md5: 541739031211373748B39B6761C6861D<br/>
+       sha1: E6514457A3F54F1703504DEAC6514F66032F15EC
       </div>
      </td>
     </tr>      
