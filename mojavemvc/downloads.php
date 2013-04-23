@@ -4,8 +4,20 @@
 <table width="400px" border="0" cellpadding="10" cellspacing="10">
  <tr>
   <td align="center">
-   <p style="font-family:arial;font-size:10pt"">Current Version:</p>
+   <p style="font-family:arial;font-size:10pt">Current Version:</p>
    <table cellspacing="15">
+    <tr>
+	  <td>
+	    <span class="smalltext">Apache Maven</span>
+	    <?php
+          echo geshify('<dependency>
+            <groupId>org.mojavemvc</groupId>
+            <artifactId>mojave-core</artifactId>
+            <version>1.0.6</version>
+          </dependency>','xml');
+        ?>
+	  </td>
+	</tr>
     <tr>
      <td>
       <a  style="text-decoration:none;font-family:arial;font-size:10pt" href="files/mojave-core-1.0.6.jar">Mojave MVC v1.0.6 jar</a><br/>
