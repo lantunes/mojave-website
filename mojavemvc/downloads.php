@@ -5,7 +5,6 @@
 <table width="400px" border="0" cellpadding="10" cellspacing="10">
  <tr>
   <td align="center">
-   <p style="font-family:arial;font-size:10pt">Current Version:</p>
    <table cellspacing="15">
     <tr>
 	  <td>
@@ -20,7 +19,7 @@ echo geshify('<dependency>
 	  </td>
 	</tr>
     <tr>
-     <td>
+     <td style="padding-top:20px">
       <a  style="text-decoration:none;font-family:arial;font-size:10pt" href="files/mojave-core-1.0.6.jar">Mojave MVC v1.0.6 jar</a><br/>
       <div class="smalltext" style="padding-top:6px">
        md5: 610A93FA6BA720DCB6479ACEC5946A93<br/>
@@ -29,7 +28,7 @@ echo geshify('<dependency>
      </td>
     </tr>      
     <tr>
-     <td>
+     <td style="padding-top:20px">
       <a  style="text-decoration:none;font-family:arial;font-size:10pt" href="files/mojave-core-1.0.6-all.jar">Mojave MVC v1.0.6 jar with all dependencies</a><br/>
       <div class="smalltext" style="padding-top:6px">
        md5: 541739031211373748B39B6761C6861D<br/>
