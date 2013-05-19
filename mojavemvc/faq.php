@@ -21,8 +21,39 @@ to render JSPs, or to provide a RESTful service, where the content produced
 is not necessarily meant to be rendered in a browser.
 </p>
 
+<h2>What problems does Mojave solve?</h2>
+
 <p class="regtext">
-If you have other questions, please post them to <a class="sitelink" href="http://groups.google.com/group/mojave-mvc" target="_blank">our Google Groups discussion group</a>. We'd really like to hear from you!
+ <ol>
+  <li>
+   Improves on the current state of Dependency Injection in an MVC or RESTful web application
+   <ul>
+    <li>provides a viable alternative to Spring web MVC</li>
+    <li>provides a simpler, cleaner way to integrate Google Guice into a web setting</li>
+   </ul>
+  </li>
+  <li>
+   Adds interceptor support to the MVC and RESTful web application landscape
+  </li>
+  <li>
+   Provides painless MVC templates by supporting JSP, <a class="sitelink" href="http://freemarker.org/">FreeMarker</a>, 
+   and <a class="sitelink" href="http://velocity.apache.org/">Velocity</a> (in progress)
+  </li>
+  <li>
+   Adds server-side asynchronous HTTP capabilities to the MVC web application landscape through integration with the 
+   <a class="sitelink" href="https://github.com/Atmosphere/atmosphere">Atmosphere</a> framework (in progress)
+  </li>
+  <li>
+   Provides a &quot;one-stop shop&quot; for various web application scenarios, from MVC with templates to URI-bound 
+   RESTful web services, to server push
+  </li>
+ </ol>
+</p>
+
+<p class="regtext">
+If you have other questions, please post them to 
+<a class="sitelink" href="http://groups.google.com/group/mojave-mvc" target="_blank">our Google Groups discussion group</a>. 
+We'd really like to hear from you!
 </p>
 
 <?php include "../mojavemvc-php-incl/docs-bottom.php" ?>
