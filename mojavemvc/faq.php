@@ -23,32 +23,34 @@ is not necessarily meant to be rendered in a browser.
 
 <h2>What problems does Mojave solve?</h2>
 
-<p class="regtext">
- <ol>
-  <li>
-   Improves on the current state of Dependency Injection in an MVC or RESTful web application
-   <ul>
-    <li>provides a viable alternative to Spring web MVC</li>
-    <li>provides a simpler, cleaner way to integrate Google Guice into a web setting</li>
-   </ul>
-  </li>
-  <li>
-   Adds interceptor support to the MVC and RESTful web application landscape
-  </li>
-  <li>
-   Provides painless MVC templates by supporting JSP, <a class="sitelink" href="http://freemarker.org/">FreeMarker</a>, 
-   and <a class="sitelink" href="http://velocity.apache.org/">Velocity</a> (in progress)
-  </li>
-  <li>
-   Adds server-side asynchronous HTTP capabilities to the MVC web application landscape through integration with the 
-   <a class="sitelink" href="https://github.com/Atmosphere/atmosphere">Atmosphere</a> framework (in progress)
-  </li>
-  <li>
-   Provides a &quot;one-stop shop&quot; for various web application scenarios, from MVC with templates to URI-bound 
-   RESTful web services, to server push
-  </li>
- </ol>
-</p>
+<ol class="regtext">
+ <li>
+  Improves on the current state of Dependency Injection in an MVC or RESTful web application
+  <ul>
+   <li>provides a viable alternative to Spring Web MVC</li>
+   <li>provides a simpler, cleaner way to integrate Google Guice into a web setting</li>
+  </ul>
+ </li>
+ <br />
+ <li>
+  Adds interceptor support to the MVC and RESTful web application landscape
+ </li>
+ <br />
+ <li>
+  Provides painless MVC templates by supporting JSP, <a class="sitelink" href="http://freemarker.org/">FreeMarker</a>, 
+  and <a class="sitelink" href="http://velocity.apache.org/">Velocity</a> (in progress)
+ </li>
+ <br />
+ <li>
+  Adds server-side asynchronous HTTP capabilities to the MVC web application landscape through integration with the 
+  <a class="sitelink" href="https://github.com/Atmosphere/atmosphere">Atmosphere</a> framework (in progress)
+ </li>
+ <br />
+ <li>
+  Provides a &quot;one-stop shop&quot; for various web application scenarios, from MVC with templates to URI-bound 
+  RESTful web services, to server push
+ </li>
+</ol>
 
 <p class="regtext">
 If you have other questions, please post them to 
