@@ -37,13 +37,13 @@ is not necessarily meant to be rendered in a browser.
  </li>
  <br />
  <li>
-  Provides painless MVC templates by supporting JSP, <a class="sitelink" href="http://freemarker.org/" target="_blank">FreeMarker</a>, 
-  and <a class="sitelink" href="http://velocity.apache.org/" target="_blank">Velocity</a> (in progress)
+  Provides painless MVC templates by supporting JSP, <a class="sitelink2" href="http://freemarker.org/" target="_blank">FreeMarker</a>, 
+  and <a class="sitelink2" href="http://velocity.apache.org/" target="_blank">Velocity</a> (in progress)
  </li>
  <br />
  <li>
   Adds server-side asynchronous HTTP capabilities to the MVC web application landscape through integration with the 
-  <a class="sitelink" href="https://github.com/Atmosphere/atmosphere" target="_blank">Atmosphere</a> framework (in progress)
+  <a class="sitelink2" href="https://github.com/Atmosphere/atmosphere" target="_blank">Atmosphere</a> framework (in progress)
  </li>
  <br />
  <li>
