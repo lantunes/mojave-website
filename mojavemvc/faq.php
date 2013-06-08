@@ -38,7 +38,8 @@ is not necessarily meant to be rendered in a browser.
  <br />
  <li>
   Provides painless MVC templates by supporting JSP, <a class="sitelink2" href="http://freemarker.org/" target="_blank">FreeMarker</a>, 
-  and <a class="sitelink2" href="http://velocity.apache.org/" target="_blank">Velocity</a> (in progress)
+  <a class="sitelink2" href="http://velocity.apache.org/" target="_blank">Velocity</a>, and 
+  <a class="sitelink2" href="https://github.com/spullara/mustache.java" target="_blank">Mustache</a> (in progress)
  </li>
  <br />
  <li>
