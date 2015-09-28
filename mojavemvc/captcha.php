@@ -16,7 +16,7 @@ $dark = imagecolorallocate($im, 0, 0, 0);
 imagefilledrectangle($im, 0, 0, 200, 25, $white);
 
 //path to font:
-$font = '../../courier.ttf';
+$font = './courier.ttf';
 
 //draw text:
 imagettftext($im, 25, 0, 22, 24, $grey, $font, $randomnr);
